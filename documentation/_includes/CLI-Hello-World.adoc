@@ -328,7 +328,7 @@ UID         PID   PPID  C STIME TTY          TIME CMD
 1000120+     84     74  0 17:50 ?        00:00:00 ps -ef
 ----
 
-Normally files serverd by httpd go into /var/www/html, but the security-conscious random uid does not have permissions to write to this directory (or any other directory than the tmp dirs).
+Normally files served by httpd go into /var/www/html, but the security-conscious random uid does not have permissions to write to this directory (or any other directory than the tmp dirs).
 
 .sh-4.2$
 ----
@@ -490,7 +490,7 @@ exit
 ----
 
 
-To save time and avoid the complexity of editing an HTML file, we will just copy an exist file into the running container.
+To save time and avoid the complexity of editing an HTML file, we will just copy an existing file into the running container.
 
 You can use the sample script in /var/tmp to make life a little easier.
 
@@ -688,7 +688,7 @@ oc expose service hello-app3 --hostname=helloworld3.cloud.example.com
 
 Now it is time to define our persistent storage parameters for out application deployment.  The Workstation host in your OCP workshop has been configured with an NFS server that is already exporting helloworld HTML.  The only goal here is to mount that volume at /var/www/html within our POD.
 
-There is a more thourough explination of storage in the WebUI portion of this workshop, so for now let's avoid technical talk and just go through the motion.
+There is a more thorough explanation of storage in the WebUI portion of this workshop, so for now let's avoid technical talk and just go through the motion.
 
 ==== Create a PV (Persistent Volume)
 
@@ -944,10 +944,14 @@ Hello, World!
 </html>
 ----
 
+CAUTION: Do NOT actually do the next *Clean Up (Informational Only)* step during the WORKSHOP Today!
 
 == Clean Up (Informational Only)
 
-NOTE: We utilize the deployed applications from these exercises for the unit covering the WebUI.  We provide the commands needed for general cleanup as information only.
+WARNING: We utilize the deployed applications from these exercises for the unit covering the WebUI.  We provide the commands needed for general cleanup as information only.
+
+CAUTION: Reminder: Do NOT actually complete this "Clean Up" step during the WORKSHOP Today. You will reuse component for later exercises.
+
 
 .[root@master ~]#
 ----
