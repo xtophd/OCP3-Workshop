@@ -309,14 +309,10 @@ ansible_service_broker_local_registry_whitelist=['.*-apb$']
 ### OpenShift Hosts
 ###########################################################################
 [OSEv3:children]
-lb
 masters
 etcd
 nodes
 glusterfs
-
-[lb]
-lb1.example.com
 
 [masters]
 master.example.com
