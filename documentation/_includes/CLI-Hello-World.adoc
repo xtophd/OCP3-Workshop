@@ -688,7 +688,7 @@ oc expose service hello-app3 --hostname=helloworld3.cloud.example.com
 
 === Modify the Project, Build or Deployment
 
-Now it is time to define our persistent storage parameters for out application deployment.  The Workstation host in your OCP workshop has been configured with an NFS server that is already exporting helloworld HTML.  The only goal here is to mount that volume at /var/www/html within our POD.
+Now it is time to define our persistent storage parameters for our application deployment.  The Workstation host in your OCP workshop has been configured with an NFS server that is already exporting helloworld HTML.  The only goal here is to mount that volume at /var/www/html within our POD.
 
 There is a more thourough explination of storage in the WebUI portion of this workshop, so for now let's avoid technical talk and just go through the motion.
 
